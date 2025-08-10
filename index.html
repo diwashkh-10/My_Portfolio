@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diwash Khatiwoda - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Diwash Khatiwoda</h1>
+            <p>Student | Learner | Tech Enthusiast</p>
+            <div class="buttons">
+                <a href="#about" class="btn">About Me</a>
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                Hello! I’m Diwash Khatiwoda, a passionate student who loves learning about technology, 
+                problem-solving, and exploring new ideas. I aim to build skills that will make a 
+                positive impact on the world.
+            </p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+            <p>GitHub: <a href="https://github.com/" target="_blank">My GitHub</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Diwash Khatiwoda. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Simple smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
